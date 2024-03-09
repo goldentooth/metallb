@@ -4,6 +4,6 @@ metadata:
   name: "{{ .Values.peerName }}"
   namespace: "{{ .Values.namespace }}"
 spec:
-  myASN: "{{ .Values.myASN }}"
-  peerASN: "{{ .Values.peerASN }}"
+  myASN: {{ .Values.myASN }}
+  peerASN: {{ .Values.peerASN }}
   peerAddress: "{{ .Values.peerAddress }}"
