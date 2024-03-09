@@ -1,0 +1,7 @@
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: primary
+  namespace: "{{ .Values.namespace }}"
+spec:
+  addresses: "{{ .Values.addresses }}"

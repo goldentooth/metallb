@@ -1,0 +1,6 @@
+apiVersion: 'v2'
+name: 'metallb'
+description: 'MetalLB'
+type: 'application'
+version: '0.0.1'
+appVersion: '0.0.1'
