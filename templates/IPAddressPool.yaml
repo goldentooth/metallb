@@ -4,4 +4,5 @@ metadata:
   name: primary
   namespace: "{{ .Values.namespace }}"
 spec:
-  addresses: "{{ .Values.addresses }}"
+  addresses:
+    - "{{ .Values.addressPool }}"
