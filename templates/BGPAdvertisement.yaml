@@ -2,7 +2,7 @@ apiVersion: metallb.io/v1beta1
 kind: BGPAdvertisement
 metadata:
   name: primary
-  namespace: "{{ .Values.namespace }}"
+  namespace: "{{ .Values.spec.namespace }}"
 spec:
   ipAddressPools:
     - primary
