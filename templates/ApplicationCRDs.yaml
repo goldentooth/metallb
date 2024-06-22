@@ -6,6 +6,8 @@ metadata:
   labels:
     name: "{{ .Values.spec.crdSource.releaseName }}"
     managed-by: 'argocd'
+  annotations:
+    argocd.argoproj.io/hook: PreSync
 spec:
   source:
     repoURL: "{{ .Values.spec.crdSource.repoURL }}"
