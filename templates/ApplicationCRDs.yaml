@@ -9,6 +9,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "-4"
 spec:
+  project: "{{ .Values.spec.projectName }}"
   source:
     repoURL: "{{ .Values.spec.crdSource.repoURL }}"
     chart: "{{ .Values.spec.crdSource.chart }}"
