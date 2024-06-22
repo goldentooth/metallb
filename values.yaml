@@ -14,3 +14,10 @@ spec:
     helm:
       releaseName: 'metallb'
       version: v3
+  crdSource:
+    repoURL: 'https://metallb.github.io/metallb'
+    chart: 'crds'
+    targetRevision: '0.0.0'
+    helm:
+      releaseName: 'metallb-crds'
+      version: v3
