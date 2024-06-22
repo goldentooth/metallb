@@ -9,4 +9,4 @@ metadata:
     pod-security.kubernetes.io/audit: privileged
     pod-security.kubernetes.io/warn: privileged
   annotations:
-    argocd.argoproj.io/wave: '-1'
+    argocd.argoproj.io/wave: '-5'

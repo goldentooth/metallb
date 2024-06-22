@@ -19,5 +19,5 @@ spec:
     chart: 'crds'
     targetRevision: '0.0.0'
     helm:
-      releaseName: 'metallb-crds'
+      releaseName: 'crds'
       version: v3

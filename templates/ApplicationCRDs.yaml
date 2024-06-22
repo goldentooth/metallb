@@ -1,14 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: "{{ .Values.spec.crdSource.releaseName }}"
+  name: "{{ .Values.spec.releaseName }}-crds"
   namespace: argocd
   labels:
-    name: "{{ .Values.spec.crdSource.releaseName }}"
+    name: "{{ .Values.spec.releaseName }}-crds"
     managed-by: 'argocd'
   annotations:
-    argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/sync-wave: "-1"
+    argocd.argoproj.io/sync-wave: "-4"
 spec:
   source:
     repoURL: "{{ .Values.spec.crdSource.repoURL }}"
