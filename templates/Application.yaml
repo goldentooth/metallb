@@ -6,6 +6,8 @@ metadata:
   labels:
     name: "{{ .Values.spec.releaseName }}"
     managed-by: 'argocd'
+  annotations:
+    argocd.argoproj.io/wave: '-4'
 spec:
   project: "{{ .Values.spec.projectName }}"
   source:
