@@ -10,4 +10,3 @@ metadata:
     pod-security.kubernetes.io/warn: privileged
   annotations:
     argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/sync-wave: "-1"
