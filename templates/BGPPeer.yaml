@@ -1,4 +1,4 @@
-apiVersion: metallb.io/v1beta2
+apiVersion: metallb.io/v1
 kind: BGPPeer
 metadata:
   name: "{{ .Values.spec.peerName }}"
