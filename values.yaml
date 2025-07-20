@@ -10,3 +10,7 @@ spec:
     helm:
       releaseName: 'metallb'
       version: v3
+      values: |
+        speaker:
+          frr:
+            enabled: false
