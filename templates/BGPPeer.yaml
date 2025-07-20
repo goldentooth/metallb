@@ -1,9 +1,0 @@
-apiVersion: metallb.io/v1beta1
-kind: BGPPeer
-metadata:
-  name: "{{ .Values.spec.peerName }}"
-  namespace: "{{ .Values.spec.namespace }}"
-spec:
-  myASN: {{ .Values.spec.myASN }}
-  peerASN: {{ .Values.spec.peerASN }}
-  peerAddress: "{{ .Values.spec.peerAddress }}"
