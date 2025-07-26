@@ -23,6 +23,9 @@ spec:
           scrapeAnnotations: true
           metricsPort: 7472
           rbacPrometheus: true
+        speaker:
+          frr:
+            enabled: false
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: "{{ .Values.spec.namespace }}"
